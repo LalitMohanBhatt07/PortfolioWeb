@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">Lalit</a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#experience">Experiences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="section__container header__container" id="home">
+      <img src="assets/avatar.png" alt="header" />
+      <h1>I'm Lalit Bhatt <br/>Passionate<br /><span>Full Stack Developer</span></h1>
+      <p>
+        Welcome to my portfolio! I am an aspiring software developer eager to make a mark in the world of coding. Explore my journey through projects, tutorials, and insights into software development. Join me as I embark on this exciting career path, ready to learn and grow in the ever-evolving tech industry!
+      </p>
+      <div class="header__btns">
+        <button class="btn">Get in Touch</button>
+        <a href="assets/Lalit_Resume_Web (5).pdf" download>Download CV</a>
+      </div>
+    </header>
+
+    <section class="section__container skill__container">
+      <h2>SKILLS</h2>
+      <ul class="skill__flex">
+        <li>
+          <img class="pngImage" src="./assets/html.png" alt="">
+          <span>HTML</span>
+        </li>
+        <li>
+          <img class="pngImage" src="./assets/css.png" alt="">
+          <span>CSS</span>
+        </li>
+        <li>
+          <img class="pngImage" src="./assets/js.png" alt="">
+          <span>Javascript</span>
+        </li>
+        
+        <li>
+          <img class="pngImage" src="./assets/react.png" alt="">
+          <span>React</span>
+        </li>
+        <li>
+          <img class="pngImage" src="./assets/node.png" alt="">
+          <span>Node.js</span>
+        </li>
+        <li>
+          <img class="pngImage" src="./assets/express.png" alt="">
+          <span>Express.js</span>
+        </li>
+        <li>
+          <img class="pngImage" src="./assets/mongo.png" alt="">
+          <span>MongoDB</span>
+        </li>
+      </li>
+      <li>
+        <img class="pngImage" src="./assets/redux.png" alt="">
+        <span>Redux</span>
+      </li>
+    </li>
+    <li>
+      <img class="pngImage" src="./assets/c.png" alt="">
+      <span>C</span>
+    </li>
+  </li>
+  <li>
+    <img class="pngImage" src="./assets/cpp.png" alt="">
+    <span>C++</span>
+  </li>
+  <li>
+    <img class="pngImage" src="./assets/java.png" alt="">
+    <span>Java</span>
+  </li>
+  <li>
+    <img class="pngImage" src="./assets/python.png" alt="">
+    <span>Python</span>
+  </li>
+
+      </ul>
+    </section>
+
+    <section class="section__container project__container" id="project">
+      <h2>PROJECTS</h2>
+      <div class="project__grid">
+        <div class="project__card" onclick="handleClickFirstProject()">
+          <img src="assets/edtech.jpeg" alt="project" />
+          <div class="project__card__details">
+            <div>
+              <p>EdTech Platform</p>
+              <h4>Stunning Landing Page</h4>
+            </div>
+            <a href="https://study-notion-frontend-phi-mocha.vercel.app/"><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+        <div class="project__card" onclick="handleClickSecondProject()">
+          <img src="assets/netflixProject.jpeg" alt="project" />
+          <div class="project__card__details">
+            <div>
+              <p>Watch Movies and Series</p>
+              <h4>Explore the World</h4>
+            </div>
+            <a href="https://netflix-assist-gpt.vercel.app/browse"><i class="ri-arrow-right-up-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container experience__container" id="experience">
+      <h2>Experience</h2>
+      <div class="experience__card">
+        <div class="experience__header">
+          <h3>Full Stack Web Developer Intern</h3>
+          <p class="company-name">Physics Wallah</p>
+          <p class="duration">June 2023 - August 2023</p>
+        </div>
+        <div class="experience__details">
+          <h4>Key Responsibilities:</h4>
+          <ul>
+            <li>Developed and maintained features for the healthcare management system using the MERN stack and Redux.</li>
+            <li>Collaborated with the development team to design and implement new functionalities.</li>
+            <li>Conducted code reviews and participated in sprint planning meetings.</li>
+            <li>Optimized application performance and ensured cross-platform compatibility.</li>
+            <li>Worked on debugging and resolving issues to improve user experience.</li>
+          </ul>
+          <h4>Technologies Used:</h4>
+          <ul class="technologies">
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>Redux</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="contactUs">Contact Us</h2>
+    <div class="background">
+      
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="NAME" >
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" placeholder="MESSAGE">
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button class="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    <footer>
+      <div class="section__container footer__container" id="contact">
+        <h2>Contact</h2>
+        <p>
+          I'd love to hear from you! Whether you have a project in mind, a
+          question about my work, or just want to connect, feel free to reach
+          out. You can contact me via email or through my social media channels.
+          I am always excited to collaborate with like-minded individuals and
+          explore new opportunities.
+        </p>
+        <div class="mail__to">
+          <a href="#">
+            <span><i class="ri-mail-line"></i></span>
+            lalitbhatt293@gmail.com
+          </a>
+        </div>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-google-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
